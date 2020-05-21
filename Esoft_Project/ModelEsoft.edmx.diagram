@@ -4,9 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b0f88257d71e4439a64e21ef69a7b1a1" Name="Diagram1">
-        <EntityTypeShape EntityType="ESOFTTModel.AgentSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ESOFTTModel.ClientsSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="b499c323c766471a821c2f0320a7eaf0" Name="Diagram1">
+        <EntityTypeShape EntityType="ESOFTModel.AgentSet" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.ClientsSet" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.DealSet" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.DemandSet" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.RealEstateSet" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.SupplySet" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESOFTModel.Users" Width="1.5" PointX="5.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="ESOFTModel.FK_DemandSet_AgentSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_SupplySet_AgentSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_DemandSet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_SupplySet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_DealSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_DealSet_SupplySet" ManuallyRouted="false" />
+        <AssociationConnector Association="ESOFTModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

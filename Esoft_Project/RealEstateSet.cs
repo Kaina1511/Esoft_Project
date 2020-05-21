@@ -12,24 +12,27 @@ namespace Esoft_Project
     using System;
     using System.Collections.Generic;
     
-    public partial class ClientsSet
+    public partial class RealEstateSet
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ClientsSet()
+        public RealEstateSet()
         {
-            this.DemandSet = new HashSet<DemandSet>();
             this.SupplySet = new HashSet<SupplySet>();
         }
     
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
+        public string Address_City { get; set; }
+        public string Address_Street { get; set; }
+        public string Address_House { get; set; }
+        public string Address_Number { get; set; }
+        public Nullable<double> Coordinate_ltitude { get; set; }
+        public Nullable<double> Coordinate_longitude { get; set; }
+        public int Type { get; set; }
+        public Nullable<double> TotalArea { get; set; }
+        public Nullable<int> TotalFloors { get; set; }
+        public Nullable<int> Rooms { get; set; }
+        public Nullable<int> Floor { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DemandSet> DemandSet { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SupplySet> SupplySet { get; set; }
     }

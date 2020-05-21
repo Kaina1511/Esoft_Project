@@ -53,7 +53,7 @@ namespace Esoft_Project
             }
             catch 
             {
-                MessageBox.Show("БЛИН!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Убедитесь, что все поля заполненны правильно!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

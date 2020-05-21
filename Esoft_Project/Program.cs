@@ -6,9 +6,15 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
+    public struct User
+    {
+        public string login;
+        public string password;
+        public string type;
+    }
     static class Program
     {
-        public static ESOFTTEntities wfedb = new ESOFTTEntities();
+        public static ESOFTEntities7 wfedb = new ESOFTEntities7();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -17,7 +23,7 @@ namespace Esoft_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new FormAuthorization());
         }
     }
 }

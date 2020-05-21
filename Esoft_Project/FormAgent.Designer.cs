@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgent));
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelMiddleName = new System.Windows.Forms.Label();
@@ -50,16 +51,18 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(12, 27);
+            this.labelLastName.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelLastName.Location = new System.Drawing.Point(9, 12);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(56, 13);
+            this.labelLastName.Size = new System.Drawing.Size(53, 13);
             this.labelLastName.TabIndex = 0;
             this.labelLastName.Text = "Фамилия";
             // 
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(12, 71);
+            this.labelFirstName.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirstName.Location = new System.Drawing.Point(9, 69);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(29, 13);
             this.labelFirstName.TabIndex = 1;
@@ -68,7 +71,8 @@
             // labelMiddleName
             // 
             this.labelMiddleName.AutoSize = true;
-            this.labelMiddleName.Location = new System.Drawing.Point(9, 155);
+            this.labelMiddleName.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMiddleName.Location = new System.Drawing.Point(9, 130);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(54, 13);
             this.labelMiddleName.TabIndex = 2;
@@ -77,38 +81,39 @@
             // labelDealShare
             // 
             this.labelDealShare.AutoSize = true;
-            this.labelDealShare.Location = new System.Drawing.Point(9, 221);
+            this.labelDealShare.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDealShare.Location = new System.Drawing.Point(9, 190);
             this.labelDealShare.Name = "labelDealShare";
-            this.labelDealShare.Size = new System.Drawing.Size(101, 13);
+            this.labelDealShare.Size = new System.Drawing.Size(100, 13);
             this.labelDealShare.TabIndex = 3;
             this.labelDealShare.Text = "Доля от комиссии";
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(12, 43);
+            this.textBoxLastName.Location = new System.Drawing.Point(9, 146);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(100, 21);
             this.textBoxLastName.TabIndex = 4;
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(12, 96);
+            this.textBoxFirstName.Location = new System.Drawing.Point(9, 28);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(100, 21);
             this.textBoxFirstName.TabIndex = 5;
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(12, 171);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(9, 85);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(100, 21);
             this.textBoxMiddleName.TabIndex = 6;
             // 
             // textBoxDealShare
             // 
-            this.textBoxDealShare.Location = new System.Drawing.Point(10, 237);
+            this.textBoxDealShare.Location = new System.Drawing.Point(9, 206);
             this.textBoxDealShare.Name = "textBoxDealShare";
-            this.textBoxDealShare.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDealShare.Size = new System.Drawing.Size(100, 21);
             this.textBoxDealShare.TabIndex = 7;
             // 
             // listViewAgent
@@ -119,12 +124,13 @@
             this.FirstName,
             this.MiddleName,
             this.DealShare});
+            this.listViewAgent.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewAgent.FullRowSelect = true;
             this.listViewAgent.GridLines = true;
             this.listViewAgent.Location = new System.Drawing.Point(129, 12);
             this.listViewAgent.MultiSelect = false;
             this.listViewAgent.Name = "listViewAgent";
-            this.listViewAgent.Size = new System.Drawing.Size(517, 283);
+            this.listViewAgent.Size = new System.Drawing.Size(506, 283);
             this.listViewAgent.TabIndex = 8;
             this.listViewAgent.UseCompatibleStateImageBehavior = false;
             this.listViewAgent.View = System.Windows.Forms.View.Details;
@@ -156,38 +162,50 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(227, 301);
+            this.buttonAdd.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAdd.Location = new System.Drawing.Point(334, 301);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(79, 20);
+            this.buttonAdd.Size = new System.Drawing.Size(79, 22);
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Создать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDel
             // 
-            this.buttonDel.Location = new System.Drawing.Point(449, 301);
+            this.buttonDel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDel.Location = new System.Drawing.Point(556, 301);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(79, 20);
+            this.buttonDel.Size = new System.Drawing.Size(79, 22);
             this.buttonDel.TabIndex = 11;
             this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonEditt
             // 
-            this.buttonEditt.Location = new System.Drawing.Point(341, 300);
+            this.buttonEditt.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEditt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEditt.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEditt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonEditt.Location = new System.Drawing.Point(444, 302);
             this.buttonEditt.Name = "buttonEditt";
-            this.buttonEditt.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditt.Size = new System.Drawing.Size(79, 22);
             this.buttonEditt.TabIndex = 12;
             this.buttonEditt.Text = "Изменить";
-            this.buttonEditt.UseVisualStyleBackColor = true;
+            this.buttonEditt.UseVisualStyleBackColor = false;
             this.buttonEditt.Click += new System.EventHandler(this.buttonEditt_Click);
             // 
             // FormAgent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(647, 333);
             this.Controls.Add(this.buttonEditt);
             this.Controls.Add(this.buttonDel);
@@ -201,8 +219,11 @@
             this.Controls.Add(this.labelMiddleName);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
+            this.Font = new System.Drawing.Font("Roboto Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAgent";
-            this.Text = "FormAgent";
+            this.Text = "Риелторы";
+            this.TransparencyKey = System.Drawing.SystemColors.Desktop;
             this.ResumeLayout(false);
             this.PerformLayout();
 
